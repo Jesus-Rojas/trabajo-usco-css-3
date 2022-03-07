@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Ejercicio de selectores CSS y LAYOUT..</title>
+	<style>
+		html {
+			box-sizing: border-box;
+		}
+
+		*,
+		*:before,
+		*:after {
+			box-sizing: inherit;
+		}
+
+		.rojo {
+			color: red;
+		}
+
+		.azul {
+			color: blue;
+		}
+
+		body {
+			font-family: verdana;
+			width: 80%;
+			margin: 0 auto;
+		}
+
+
+		h2 {
+			padding: .5rem;
+		}
+
+		p {
+			padding: .5rem;
+		}
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		ul li {
+			display: inline-block;
+			padding: .8rem;
+			background-color: #8f3422;
+			border-color: #fff;
+			border-style: dotted;
+			border-width: 4px;
+			color: #fff;
+		}
+
+		ul li:hover {
+			background-color: #fff;
+			color: #8f3422;
+			border-color: #8f3422;
+			cursor: pointer;
+		}
+
+		#contenido {
+			background-color: #ebd2c4;
+			border-radius: 1rem;
+			padding-top: 1rem;
+			margin-top: 1rem;
+		}
+
+		#css {
+			background-color: #e0bae6;
+			width: 34%;
+			float: right;
+			border-radius: 1rem;
+			padding: 1rem;
+		}
+
+		#html {
+			background-color: #BFCFFF;
+			border-radius: 1rem;
+			padding: 1rem;
+			width: 33%;
+			float: right;
+		}
+
+		#conceptos {
+			background-color: #d4f0cf;
+			border-radius: 1rem;
+			padding: 1rem;
+			width: 33%;
+			display: inline-block;
+		}
+	</style>
+</head>
+
+<body>
+	<h3 class="azul">Aquí mis nombres y apellidos</h3>
+	<h3 class="rojo">En el ˂ BODY ˃ solo coloque sus nombres y apellidos, LO DEMÁS del ˂ BODY ˃ NO se puede modificar
+		!!! <br />Solo modifique estilos en < STYLE> !!!</h3>
+	<hr />
+
+	<div id="encabezado">
+		<h1> LIBRO TECNOLOGÍAS WEB </h1>
+		<ul>
+			<li> Inicio </li>
+			<li> Capítulo 1 </li>
+			<li> Capítulo 2 </li>
+			<li> Capítulo 3 </li>
+			<li> Conclusiones </li>
+		</ul>
+	</div>
+
+	<div id="contenido">
+		<h2>Contenido del libro</h2>
+
+		<p>
+			El contenido de este libro se estructura en tres apartados bien diferenciados:
+		</p>
+
+		<div id="css">
+			<h2>CSS</h2>
+			<p>
+				En la tercera y última parte se explica CSS, el lenguaje que se emplea para definir el formato y la
+				presentación de una página web. Se explica cómo utilizar el color, cómo definir la presentación del
+				texto, de las tablas y de los formularios; cómo realizar transformaciones y transiciones con el fin de
+				diseñar una página.
+			</p>
+		</div>
+
+		<div id="html">
+			<h2>HTML</h2>
+			<p>
+				En la segunda parte se trabaja HTML. Partiendo de la estructura básica de una página web, se explican
+				las etiquetas de HTML que se utilizan para definir el texto, los enlaces, las listas, las tablas, los
+				formularios y los elementos multimedia.
+			</p>
+		</div>
+
+		<div id="conceptos">
+			<h2>Conceptos Básicos</h2>
+			<p>
+				En la primera parte del libro se trabajan conceptos generales que son necesarios para poder desarrollar
+				páginas web; se explican conceptos de estructura física y estructura lógica (o estructura de navegación)
+				de un sitio web. Se detalla cómo influye la estructura física en las URL o direcciones que se emplean a
+				la hora de crear los enlaces de un sitio web. Pasando por el concepto de "estándar web", un término
+				general que se emplea para refererirse a los estándares que define su funcionamiento como HTML y CSS,
+				empleados para el desarrollo de las páginas web en el lado del cliente.
+			</p>
+		</div>
+
+
+		<!--ago2021-->
+	</div>
+
+</body>
+
+</html>
